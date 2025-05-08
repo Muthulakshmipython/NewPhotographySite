@@ -1,0 +1,58 @@
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+
+  .image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .category-content {
+    display: none;
+  }
+
+  .active-category {
+    display: block;
+  }
+
+  /* Optional: Style for the active category menu item */
+  .menu-item.active {
+    color: #ff5733;
+    font-weight: bold;
+  }
+
+  .image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .large-image {
+    width: 100%;
+    height: 315px; /* Make sure both large images are same height */
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+  }
+  
+  .small-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+  }
+  
+  .second-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 315px; /* To match height of large image */
+    gap: 15px;
+  }
+  
